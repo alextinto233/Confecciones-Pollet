@@ -35,7 +35,7 @@ const initialProducts = [
 ];
 
 const initialGalleryImages = [
-    { id: 'gal1', src: './cliente-1.jpeg', alt: 'Cliente Satisfecho 1', placeholder: 'https://placehold.co/600x700/fbcfe8/333333?text=Cliente+Feliz+1' }, // <-- CAMBIA AQUÍ
+    { id: 'gal1', src: './Cliente-1.jpeg', alt: 'Cliente Satisfecho 1', placeholder: 'https://placehold.co/600x700/fbcfe8/333333?text=Cliente+Feliz+1' }, // <-- CAMBIA AQUÍ
     { id: 'gal2', src: './cliente-2.jpeg', alt: 'Cliente Satisfecho 2', placeholder: 'https://placehold.co/600x700/fbcfe8/333333?text=Cliente+Feliz+2' }, // <-- CAMBIA AQUÍ
     { id: 'gal3', src: './cliente-3.jpeg', alt: 'Cliente Satisfecho 3', placeholder: 'https://placehold.co/600x700/fbcfe8/333333?text=Cliente+Feliz+3' }, // <-- CAMBIA AQUÍ
     { id: 'gal4', src: './cliente-4.jpeg', alt: 'Cliente Satisfecho 4', placeholder: 'https://placehold.co/600x700/fbcfe8/333333?text=Cliente+Feliz+4' }, // <-- CAMBIA AQUÍ
