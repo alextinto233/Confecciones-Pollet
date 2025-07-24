@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Confecciones Pollet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-logo-style {
+            font-family: 'Dancing Script', cursive;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 py-2 flex justify-between items-center">
+            <a href="./index.html" class="cursor-pointer">
+                <img src="../assets/images/mi-logo-pollet.png" alt="Pollet Bags Logo" class="h-16 sm:h-20 w-auto">
+            </a>
+            <button id="menu-open" class="text-gray-800 hover:text-[#E5739D] focus:outline-none z-50 lg:hidden"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            <nav class="hidden lg:flex items-center space-x-6">
+                <a href="./catalogo.html" class="text-gray-800 hover:text-[#E5739D] transition font-medium">Catálogo</a>
+                <a href="./sobre-mi.html" class="text-gray-800 hover:text-[#E5739D] transition font-medium">Sobre Mí</a>
+                <a href="./galeria.html" class="text-gray-800 hover:text-[#E5739D] transition font-medium">Galería</a>
+                <a href="./guia-tallas.html" class="text-gray-800 hover:text-[#E5739D] transition font-medium">Guía de Tallas</a>
+                <a href="./preguntas.html" class="text-gray-800 hover:text-[#E5739D] transition font-medium">Preguntas</a>
+            </nav>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center transition-opacity duration-300 lg:hidden">
+        <button id="menu-close" class="absolute top-6 right-6 text-gray-800 hover:text-[#E5739D] focus:outline-none"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+        <nav class="flex flex-col items-center space-y-8">
+            <a href="./index.html" class="text-2xl text-gray-800 hover:text-[#E5739D] transition">Inicio</a>
+            <a href="./catalogo.html" class="text-2xl text-gray-800 hover:text-[#E5739D] transition">Catálogo</a>
+            <a href="./sobre-mi.html" class="text-2xl text-gray-800 hover:text-[#E5739D] transition">Sobre Mí</a>
+            <a href="./galeria.html" class="text-2xl text-gray-800 hover:text-[#E5739D] transition">Galería</a>
+            <a href="./guia-tallas.html" class="text-2xl text-gray-800 hover:text-[#E5739D] transition">Guía de Tallas</a>
+            <a href="./preguntas.html" class="text-2xl text-gray-800 hover:text-[#E5739D] transition">Preguntas</a>
+        </nav>
+    </div>
+
+    <main>
+        <section id="catalogo" class="py-16 bg-white min-h-screen">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 class="text-3xl sm:text-4xl font-display text-center text-gray-800 mb-12">Nuestro Catálogo</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <div class="bg-pink-50 rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition duration-300">
+                        <img src="../assets/images/foto-vestido.jpeg" alt="Vestidos de Huasa" class="w-full h-80 object-cover">
+                        <div class="p-6 flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Vestidos de Huasa</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">Confección a medida de hermosos vestidos para Fiestas Patrias y eventos. Telas y diseños tradicionales de alta calidad.</p>
+                            <button class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 transition mt-auto view-details">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="bg-pink-50 rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition duration-300">
+                        <img src="../assets/images/foto-falso.jpeg" alt="Falsos para Vestidos" class="w-full h-80 object-cover">
+                        <div class="p-6 flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Falsos para Vestidos</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">El complemento ideal para dar el volumen perfecto a tus vestidos de huasa. Hechos con Cancan gala mexicano, material firme y liviano.</p>
+                            <button class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 transition mt-auto view-details">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="bg-pink-50 rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition duration-300">
+                        <img src="../assets/images/foto-bolso.jpeg" alt="Mochilas y Bolsos" class="w-full h-80 object-cover">
+                        <div class="p-6 flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Mochilas y Bolsos</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">Diseños únicos y prácticos para el día a día, hechos a mano con amor. Materiales impermeables y diseños hermosos.</p>
+                            <button class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 transition mt-auto view-details">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="product-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg w-full max-w-3xl max-h-full overflow-y-auto relative fade-in">
+            <button id="modal-close" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl z-10">&times;</button>
+            <div class="md:flex">
+                <div class="md:w-1/2"><img id="modal-image" src="" alt="Detalle de producto" class="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"></div>
+                <div class="p-8 md:w-1/2 flex flex-col">
+                    <h2 id="modal-title" class="text-3xl font-display mb-4"></h2>
+                    <p id="modal-description" class="text-gray-600 mb-6 flex-grow"></p>
+                    <p class="text-sm text-gray-500 mt-2">Si el producto es una prenda de vestir, consulta nuestra <a href="./guia-tallas.html" class="text-[#E5739D] underline">guía de tallas</a>.</p>
+                    <a id="whatsapp-link" href="" target="_blank" rel="noopener noreferrer" class="mt-6 w-full bg-[#E5739D] text-white font-bold py-3 px-6 rounded-full hover:bg-[#D46A8F] transition transform hover:scale-105 inline-block text-center">Pedir este producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-display mb-4">¿Lista para hacer tu pedido?</h2>
+            <p class="mb-6">Hablemos directamente. Estaré feliz de tomar tu pedido y resolver tus dudas.</p>
+            <a href="https://wa.me/56992470789?text=Hola!%20Me%20interesa%20un%20producto%20de%20tu%20catálogo%20Pollet%20Bags." target="_blank" rel="noopener noreferrer" class="bg-white text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition transform hover:scale-105 inline-block">Contactar por WhatsApp</a>
+            <div class="mt-8"><p>&copy; 2025 Pollet Bags. Todos los derechos reservados.</p></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/56992470789?text=Hola!%20Quisiera%20hacer%20una%20consulta%20sobre%20Pollet%20Bags." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir chat de WhatsApp con Pollet Bags">
+        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="w-8 h-8 m-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 .9c60.3 0 115.6 23.3 157.4 65.2 41.8 41.9 67.1 97.2 67.1 157.1 0 109.8-89.2 199-199 199-.1 0-.1 0-.2 0-34.9 0-68.9-9.2-99.2-26.3l-7-4.1-71.6 18.8 19.1-69.8-4.6-7.4c-18.7-30.6-29.9-66.3-29.9-103.3 0-109.8 89.2-199 199-199zm101.9 148.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+        <span class="sr-only">Abrir chat de WhatsApp con Pollet Bags</span>
+    </a>
+
+    <script>
+        const menuOpen = document.getElementById('menu-open');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuOpen.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        const products = [
+            { 
+                id: 1, 
+                title: 'Vestidos de Huasa', 
+                description: 'Confección a medida de hermosos vestidos para Fiestas Patrias y eventos. Telas y diseños tradicionales de alta calidad.', 
+                longDescription: 'Confección a medida de hermosos vestidos para Fiestas Patrias y eventos. Telas y diseños tradicionales de alta calidad.', 
+                imageUrl: '../assets/images/foto-vestido.jpeg',
+            },
+            {
+                id: 2, 
+                title: 'Falsos para Vestidos', 
+                description: 'El complemento ideal para dar el volumen perfecto a tus vestidos de huasa. Hechos con Cancan gala mexicano, material firme y liviano.', 
+                longDescription: 'El complemento ideal para dar el volumen perfecto a tus vestidos de huasa. Hechos con Cancan gala mexicano, material firme y liviano.', 
+                imageUrl: '../assets/images/foto-falso.jpeg',
+            },
+            {
+                id: 3, 
+                title: 'Mochilas y Bolsos', 
+                description: 'Diseños únicos y prácticos para el día a día, hechos a mano con amor. Materiales impermeables y diseños hermosos.', 
+                longDescription: 'Diseños únicos y prácticos para el día a día, hechos a mano con amor. Materiales impermeables y diseños hermosos.', 
+                imageUrl: '../assets/images/foto-bolso.jpeg',
+            },
+        ];
+
+        const modal = document.getElementById('product-modal');
+        const modalClose = document.getElementById('modal-close');
+        const viewDetailsButtons = document.querySelectorAll('.view-details');
+
+        viewDetailsButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const product = products[index];
+                document.getElementById('modal-image').src = product.imageUrl;
+                document.getElementById('modal-title').textContent = product.title;
+                document.getElementById('modal-description').textContent = product.longDescription;
+                modal.classList.remove('hidden');
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+
+    </script>
+
+</body>
+</html>
